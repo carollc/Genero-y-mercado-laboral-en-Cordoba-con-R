@@ -77,20 +77,20 @@ Reordenamos los datos con `gather` y modificamos los valores de la variable `Ind
 tabla2 <- tabla1 %>% 
   gather(Indicadores, proporcion,11:17) %>% 
   select (Sexo,periodo, Indicadores, proporcion) %>%
-  mutate( Indicadores = case_when(Sexo=="Varon" & 	Indicadores=="Tasa Actividad" ~ "Tasa Actividad varones",
-                                  Sexo=="Mujer" & 	Indicadores=="Tasa Actividad" ~ "Tasa Actividad mujeres",
-                                  Sexo=="Varon" & 	Indicadores=="Tasa Empleo" ~ "Tasa Empleo varones",
-                                  Sexo=="Mujer" & 	Indicadores=="Tasa Empleo" ~ "Tasa Empleo mujeres",
-                                  Sexo=="Varon" & 	Indicadores=="Tasa Desocupación" ~ "Tasa Desocupación varones",
-                                  Sexo=="Mujer" & 	Indicadores=="Tasa Desocupación" ~ "Tasa Desocupación mujeres",
-                                  Sexo=="Varon" & 	Indicadores=="Tasa Subocupación" ~ "Tasa Subocupación varones",
-                                  Sexo=="Mujer" & 	Indicadores=="Tasa Subocupación" ~ "Tasa Subocupación mujeres",
-                                  Sexo=="Varon" & 	Indicadores=="Tasa Ocupados Demandantes" ~ "Tasa Ocupados Demandantes varones",
-                                  Sexo=="Mujer" & 	Indicadores=="Tasa Ocupados Demandantes" ~ "Tasa Ocupados Demandantes mujeres",
-                                  Sexo=="Varon" & 	Indicadores=="Tasa Subocupación demandante" ~ "Tasa Subocupación demandante varones",
-                                  Sexo=="Mujer" & 	Indicadores=="Tasa Subocupación demandante" ~ "Tasa Subocupación demandante mujeres",
-                                  Sexo=="Varon" & 	Indicadores=="Tasa Subocupación no demandante" ~ "Tasa Subocupación no demandante varones",
-                                  Sexo=="Mujer" & 	Indicadores=="Tasa Subocupación no demandante" ~ "Tasa Subocupación no demandante mujeres"))
+  mutate( Indicadores = case_when(Sexo=="Varon" & Indicadores=="Tasa Actividad" ~ "Tasa Actividad varones",
+                                  Sexo=="Mujer" &	Indicadores=="Tasa Actividad" ~ "Tasa Actividad mujeres",
+                                  Sexo=="Varon" &	Indicadores=="Tasa Empleo" ~ "Tasa Empleo varones",
+                                  Sexo=="Mujer" &	Indicadores=="Tasa Empleo" ~ "Tasa Empleo mujeres",
+                                  Sexo=="Varon" &	Indicadores=="Tasa Desocupación" ~ "Tasa Desocupación varones",
+                                  Sexo=="Mujer" &	Indicadores=="Tasa Desocupación" ~ "Tasa Desocupación mujeres",
+                                  Sexo=="Varon" &	Indicadores=="Tasa Subocupación" ~ "Tasa Subocupación varones",
+                                  Sexo=="Mujer" &	Indicadores=="Tasa Subocupación" ~ "Tasa Subocupación mujeres",
+                                  Sexo=="Varon" &	Indicadores=="Tasa Ocupados Demandantes" ~ "Tasa Ocupados Demandantes varones",
+                                  Sexo=="Mujer" &	Indicadores=="Tasa Ocupados Demandantes" ~ "Tasa Ocupados Demandantes mujeres",
+                                  Sexo=="Varon" &	Indicadores=="Tasa Subocupación demandante" ~ "Tasa Subocupación demandante varones",
+                                  Sexo=="Mujer" &	Indicadores=="Tasa Subocupación demandante" ~ "Tasa Subocupación demandante mujeres",
+                                  Sexo=="Varon" &	Indicadores=="Tasa Subocupación no demandante" ~ "Tasa Subocupación no demandante varones",
+                                  Sexo=="Mujer" &	Indicadores=="Tasa Subocupación no demandante" ~ "Tasa Subocupación no demandante mujeres"))
 ```
 ## Visualización interactiva de los Indicadores
 
