@@ -1,2 +1,2 @@
-# Género-y-mercado-laboral-en-R
+# Género-y-mercado-laboral-en-Córdoba
 En este repositorio vamos a presentar los principales indicadores del mercado laboral para el Gran Córdoba en clave de género. Como ya sabemos, las estadísticas oficiales (todavía) no abarcan las diversidades de identidades de género, por lo que se distibuyen los datos de manera binaria en "Mujer - Varon". A pesar de esta limitación, es interesante hechar luz sobre estos indicadores por dos motivos: la falta de procesamiento y divulgación de este tipo de información sobre este territorio en particular y la necesidad de aportar evidencia empírica de la desigualdad que enfrentan las mujeres en diversos ámbitos.
