@@ -34,7 +34,7 @@ individual20 <- individual20 %>%
 
 Union_Bases <- bind_rows(individual, 
                          individual20) %>%
-filter(AGLOMERADO==12) %>% 
+filter(AGLOMERADO==13) %>% 
 mutate(periodo = paste(ANO4, TRIMESTRE, sep = "t")) %>% 
 mutate(Sexo = case_when(CH04 == 1 ~ "Varon",
                         CH04 == 2 ~ "Mujer"))
